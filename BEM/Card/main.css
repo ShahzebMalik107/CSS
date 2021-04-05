@@ -1,0 +1,50 @@
+body {
+  background-color: white;
+  margin: auto;
+}
+
+.card {
+  background-color: antiquewhite;
+  max-width: 25%;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.card__img {
+  background-color: aqua;
+  height: 200px;
+}
+
+.card__title {
+  color: #f3a136;
+}
+
+.card__disc {
+  color: #021e1f;
+}
+
+.card__button {
+  background-color: chocolate;
+  width: 25%;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.card__button:hover {
+  background-color: cornflowerblue;
+}
+
+.card__button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card--active {
+  background-color: darkgrey;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
+.card
+{
+    background-color: antiquewhite;
+    max-width: 25%;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    &__img
+    {
+        background-color: aqua;
+        height: 200px;
+    }
+    &__title
+    {
+        color: rgb(243, 161, 54);
+    }
+    &__disc
+    {
+        color: rgb(2, 30, 31);
+    }
+    &__button
+    {
+        background-color: chocolate;
+        width: 25%;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+        transition: .5s;
+    }
+    &__button:hover
+    {
+        background-color: cornflowerblue;
+    }
+    &__button a
+    {
+        color: #fff;
+        text-decoration: none;
+    }
+    &--active
+    {
+        background-color: darkgrey;
+    }
+}

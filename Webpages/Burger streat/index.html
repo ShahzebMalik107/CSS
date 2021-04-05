@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Streat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header__main">
+        <div class="header container">
+            <div class="header__logo">
+                <img src="images/Group 5.png" alt="logo">
+            </div>
+            <div class="header__cart">
+                <div class="header__cart--cart">
+                    <img src="images/Group 82.png" alt="cart">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main_banner">
+        <section class="banner">
+            <div class="banner__left">
+                <h2>Angus </br> Classic</h2>
+            </div>
+            <div class="banner__right">
+                <div class="banner__right__top">
+                    <h1>Chicken</br>Mince</h1>
+                </div>
+                <div class="container-banner banner__right__left">
+                    <h2>
+                        Chicken<br>Mince
+                    </h2>
+                    <p>
+                        Unique twist to Chicken burgers using fresh Chicken mince smashed and cooked to perfection.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="image">
+            <img src="images/unnamed.png" alt="burger">
+        </section>
+    </section>
+    <section class="cart container">
+        <article class="heading">
+            <h2>Our Delicious Menu</h2>
+        </article>
+        <article class="tabs_main">
+            <ul class="tabs">
+                <li class="tabs__items tabs--active" id="t1" onclick="ListActive(this.id)">
+                    Burgers
+                </li>
+                <li class="tabs__items" id="t2" onclick="ListActive(this.id)">
+                    Sides
+                </li>
+                <li class="tabs__items" id="t3" onclick="ListActive(this.id)">
+                    Meals
+                </li>
+                <li class="tabs__items" id="t4" onclick="ListActive(this.id)">
+                    House DIps
+                </li>
+                <li class="tabs__items" id="t5" onclick="ListActive(this.id)" >
+                    Kopparberg Ciders
+                </li>
+                <li class="tabs__items" id="t6" onclick="ListActive(this.id)">
+                    Standard Drinks
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

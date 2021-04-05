@@ -1,0 +1,209 @@
+:root {
+    --primary-color: #182e4e;
+    --secondary-color: #e51a3b;
+    --white: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 70%;
+    width: 100%;
+    margin: 0 auto;
+}
+.container-banner {
+    max-width: 35%;
+}
+
+// Header
+
+.header__main {
+    overflow: hidden;
+    z-index: 100;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    padding-top: 20px;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        &__logo {
+            flex-basis: 50%;
+        }
+        &__cart {
+            -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+            &--cart {
+                text-align: right;
+                position: relative;
+            }
+            &--cart::after {
+                content: "1";
+                background-color: var(--primary-color);
+                color: var(--white);
+                padding: 10px;
+                clip-path: circle();
+                position: absolute;
+                right: -5px;
+                top: -20px;
+            }
+        }
+    }
+}
+
+// Banner
+
+.main_banner {
+    position: relative;
+    .banner {
+        display: flex;
+        flex-wrap: wrap;
+        height: 750px;
+        &__left {
+            padding-top: 220px;
+            text-align: right;
+            color: var(--white);
+            flex-basis: 50%;
+            background: linear-gradient(70deg, var(--primary-color), var(--secondary-color));
+            h2 {
+                padding-right: 50px;
+            }
+        }
+        &__right {
+            background: linear-gradient(-50deg, var(--primary-color), var(--secondary-color));
+            flex-basis: 50%;
+            padding-top: 150px;
+            text-align: left;
+            color: var(--white);
+            &__top {
+                padding-left: 50px;
+                font-size: 50px;
+            }
+            &__left {
+                padding-left: 40%;
+                padding-top: 15%;
+            }
+        }
+    }
+    .image {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        img {
+            width: 100%;
+            padding: 0 30%;
+        }
+    }
+}
+// Cart
+
+.cart {
+    padding-top: 200px;
+    .heading {
+        text-align: center;
+    }
+    .tabs_main {
+        padding-top: 50px;
+        .tabs {
+            display: flex;
+            justify-content: center;
+            &__items {
+                list-style: none;
+                margin: 0 10px;
+                padding: 15px 30px;
+                border: solid 1px var(--secondary-color);
+                border-radius: 50px;
+            }
+            &--active {
+                border-width: 2px;
+            }
+        }
+    }
+}
+
+// Tablate View
+
+@media only screen and (max-width: 1025px) {
+    .main_banner {
+        .banner {
+            height: 600px;
+        }
+        .image {
+            top: 60%;
+
+            // img {
+            //     width: 25em;
+            // }
+        }
+    }
+}
+
+// Mobile View
+
+@media only screen and (max-width: 768px) {
+    .container-banner {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .header {
+        justify-content: center;
+        &__logo {
+            flex-basis: 100% !important;
+            text-align: center;
+        }
+        &__cart {
+            flex-basis: 100% !important;
+            padding-top: 50px;
+            &--cart {
+                text-align: center !important;
+            }
+            &--cart::after {
+                right: -54% !important;
+                left: -50%;
+                padding: 5px !important;
+            }
+        }
+    }
+
+    //Banner
+    .main_banner {
+        .banner {
+            height: 800px;
+            &__left,
+            &__right {
+                flex-basis: 100%;
+                background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            }
+            &__left {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-right: 0px;
+                padding-top: 30%;
+            }
+            &__right {
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: flex-start;
+                &__left {
+                    padding: 0;
+                }
+            }
+        }
+        .image {
+            top: 90%;
+
+            // img {
+            //     width: 20em;
+            // }
+        }
+    }
+}

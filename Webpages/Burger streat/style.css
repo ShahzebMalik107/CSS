@@ -193,6 +193,24 @@
 .main_card .Card__image {
   background-color: var(--primary-color);
   height: 400px;
+  overflow: hidden;
+}
+
+.main_card .Card__image::after {
+  overflow: hidden;
+  content: "Add to card";
+  text-align: center;
+  font-size: 50px;
+  color: var(--white);
+  display: block;
+  height: 400px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .main_card .Card__price {
@@ -214,6 +232,10 @@
 
 .main_card .Card__disc {
   padding: 20px;
+}
+
+.main_card .Card:hover .Card__image::after {
+  opacity: .75;
 }
 
 .product--active {

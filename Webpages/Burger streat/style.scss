@@ -183,6 +183,54 @@
     transition: .5s;
     overflow: visible;
 }
+.footer
+{
+    padding-top: 100px;
+    padding-bottom: 25px;
+    &__logo
+    {
+        text-align: center;
+    }
+    &__socialMedia
+    {
+        padding-top: 50px;
+        ul
+        {
+            display: flex;
+            justify-content: center;
+            li
+            {
+                padding: 20px;
+                list-style: none;
+                a
+                {
+                    font-size: 25px;
+                    background-color: var(--secondary-color);
+                    padding: 10px 15px;
+                    border-radius: 10px;
+                    color: var(--white);
+                }
+            }
+        }
+    }
+    &__upersection
+    {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 20px;
+        color: var(--primary-color);
+    }
+    &__downsection
+    {
+        font-size: 20px;
+        color: var(--primary-color);
+        text-align: center;
+        span
+        {
+            color: var(--secondary-color);
+        }
+    }
+}
 
 
 // Tablate View

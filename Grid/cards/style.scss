@@ -1,0 +1,55 @@
+.container {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    .card {
+        border: solid 2px rgb(132, 0, 255);
+        padding-bottom: 20px;
+        border-radius: 20px;
+        overflow: hidden;
+        &__image {
+            display: block;
+            height: 400px;
+            background-color: rgb(132, 0, 255);
+        }
+        &__title,
+        &__disc {
+            padding: 20px;
+        }
+        &__button {
+            margin-left: 20px;
+            color: rgb(132, 0, 255);
+            background-color: antiquewhite;
+            border: none;
+            padding: 20px 30px;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+        &__button:hover {
+            color: antiquewhite;
+            background-color: rgb(132, 0, 255);
+        }
+        &--active {
+            background-color: rgb(15, 15, 15);
+            color: rgb(238, 234, 228);
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+}

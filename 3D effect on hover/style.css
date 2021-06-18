@@ -1,0 +1,97 @@
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    transition: .5s ease all;
+    transform-style:preserve-3d;
+}
+
+
+
+
+.main-bg{
+    height: 60vh;
+    width: 50%;
+    
+}
+
+.squir{
+    background-color: plum;
+    height: 500px;
+    width: 500px;
+    display: block;
+    border-radius: 50px;
+    margin: auto;
+    box-shadow:  10px 10px 8px #8888882c;
+
+}
+.circle{
+    background-color: red;
+    height: 490px;
+    width: 490px;
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow:  10px 10px 8px #8888882c;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.layer1{
+    height: 60vh;
+    width: 50%;
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transition: .5s ease all;
+    transform-style:preserve-3d;
+}
+
+
+.layer2{
+    height: 60vh;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transition: .5s ease all;
+    transform-style:preserve-3d;
+}
+
+.layer3{
+    height: 60vh;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transition: .5s ease all;
+    transform-style:preserve-3d;
+    color: #fff;
+
+
+}
+.main:hover .layer1{
+    transform: perspective(1000px) rotateX(50deg) rotateY(20deg) rotateZ(25deg) translateX(-20px) translateY(-20px) translateZ(-20px);
+    
+}
+.main:hover .layer2{
+    transform: perspective(1000px) rotateX(50deg) rotateY(20deg) rotateZ(25deg) translateX(20px) translateY(20px) translateZ(200px);
+
+}
+.main:hover .layer3{
+    transform: perspective(10000px) rotateX(50deg) rotateY(20deg) rotateZ(25deg) translateX(40px) translateY(50px) translateZ(400px);
+}
+
+
+
